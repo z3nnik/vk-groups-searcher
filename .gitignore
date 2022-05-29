@@ -1,0 +1,7 @@
+*.txt
+*.xlsx
+*.cpgz
+
+/node_modules
+/package-lock.json
+.idea

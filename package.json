@@ -1,0 +1,22 @@
+{
+  "name": "search_groups",
+  "version": "1.0.3",
+  "description": "The project allows you to search for groups and upload them in txt and xlsx formats",
+  "main": "index.js",
+  "keywords": ["vk", "search", "groups", "xlsx"],
+  "author": {
+    "name": "z3nnik",
+    "url": "https://vk.com/zn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z3nnik/vk-groups-search.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  },
+  "dependencies": {
+    "json2xls": "^0.1.2"
+  }
+}
