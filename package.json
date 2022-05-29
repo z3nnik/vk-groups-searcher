@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/z3nnik/vk-groups-search.git"
+    "url": "https://github.com/z3nnik/vk-groups-searcher.git"
   },
   "license": "ISC",
   "devDependencies": {

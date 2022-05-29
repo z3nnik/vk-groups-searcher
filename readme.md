@@ -1,7 +1,7 @@
 # VK groups searcher
 
 
-- Выгрузка в формате __xlsx__ и __txt__
+- Выгрузка в формате `xlsx` и `txt`
 - Поиск по нескольким запросам
 - Кастомизация имени файлов
 
@@ -12,7 +12,7 @@ ___
 
 1. Клонируем проект
 ```sh
-git clone git@github.com:z3nnik/vk-groups-search.git
+git clone git@github.com:z3nnik/vk-groups-searcher.git
 ```
 
 2. Переходим в проект и устанавливаем зависимости
@@ -24,36 +24,32 @@ ___
 
 1. Переходим в файл __Config.js__ в корне проекта
 ```js
-    static access_token = '';
-    static api_v = '5.200';
+static access_token = "***";
+static api_v = "5.134";
 ```
-2. В __access_token__ вставляем токен с правами на __groups__
+2. В `access_token` вставляем токен с правами на **groups**
 
-3. Переходим в файл __index.js__. Он имеет такую структуру:
+3. Переходим в файл `index.js`. Он имеет такую структуру:
 ```js
 const Searcher = require("./helpers/Searcher");
 
 new Searcher([ "API", "ВКонтакте" ], "SomeName").getGroups().then(console.log);
 ```
 
-Где 
+Список **запросов** для поиска:
 ```js
 [ "API", "ВКонтакте" ]
 ```
-Это список __запросов__ для поиска
 
-А
+Название для файлов, в которых будет сохранена информация о группах:
 ```js
 "SomeName"
 ```
-это название для файлов, в которых будет сохранена информация о группах.
-(SomeName.txt и SomeName.xlsx)
+На выходе получится `SomeName.txt` и `SomeName.xlsx`
 
 ___
 
-Делаем 
+## Запуск
 ```sh
 node index.js
 ```
-
-И радуемся жизни
